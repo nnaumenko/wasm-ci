@@ -1,0 +1,5 @@
+* text=auto
+*.cpp eol=crlf
+*.h eol=crlf
+*.md eol=crlf
+*.txt eol=crlf

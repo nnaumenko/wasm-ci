@@ -1,0 +1,7 @@
+hello:
+  stage: build
+  image: nnaumenko/emscripten-firefox
+  script:
+  - mkdir bin
+  - emcc --emrun -s WASM=1 -o bin/hello.html example/hello/hello.cpp
+  - emrun --browser firefox bin/hello.html
